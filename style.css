@@ -121,3 +121,38 @@ nav ul li a:hover, a.active{
     display: flex;
     justify-content: space-between;
 }
+#warning{
+    color: red;
+    text-align: center;
+}
+#confirmation{
+    display: none;
+    line-height: 40px;
+}
+.transection{
+    width: 40%;
+    background-color: white;
+    margin:40px auto;
+    padding-top: 15px;
+    border-radius: 10px;
+    box-shadow:5px 5px 15px rgb(139, 217, 243);
+}
+.details{
+    padding: 30px 50px;
+
+}
+.message{
+    color: green;
+    text-align: center;
+    font-size: 25px;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+.bold{
+    color:tomato;
+    font-weight: 700;
+}

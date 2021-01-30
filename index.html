@@ -25,133 +25,144 @@
             </ul>
         </nav>
     </header>
-
-    <!--Booking Section-->
-    <main class="main-content container">
-        <div class="booking-form">
-            <h3>Booking Flights</h3>
-            <div class="input-group">
-                <label for="">Flying From</label>
-                <input class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
-            </div>
-            <div class="input-group">
-                <label for="">Flying To</label>
-                <input class="inp-style" type="text" name="" placeholder="New York, United States">
-            </div>
-            <div class="inputs">
+    <main>
+        <!--Booking Section-->
+        <section id="ticket-booking" class="main-content container">
+            <div class="booking-form">
+                <h3>Booking Flights</h3>
                 <div class="input-group">
-                    <label" for="">Departure</label>
-                        <input class="inp-style" type="date" name="">
+                    <label for="">Flying From</label>
+                    <input id="flying-from" class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
                 </div>
                 <div class="input-group">
-                    <label for="">Return</label>
-                    <input class="inp-style" type="date" name="">
+                    <label for="">Flying To</label>
+                    <input id="flying-to" class="inp-style" type="text" name="" placeholder="New York, United States">
                 </div>
-            </div>
-            <div class="input-group f-class">
-                <div>
-                    <label for="">First Class ($150)</label>
-                    <input id="first-class-count" class="inp-style inp-width" type="number" name="" value="0">
-                </div>
-                <div class="plus-minus-btn">
-                    <p> <span onclick=" handleTicketChange('first-class',true);">+</span> <span onclick=" handleTicketChange('first-class',false);">-</span></p>
-                </div>
-            </div>
-
-            <div class="input-group f-class">
-                <div>
-                    <label for="">Economy ($100)</label>
-                    <input id="economy-count" class="inp-style inp-width" type="number" name="" value="0">
-                </div>
-                <div class="plus-minus-btn">
-                    <p> <span onclick="handleTicketChange('economy',true);">+</span> <span onclick="handleTicketChange('economy',false);">-</span> </p>
-                </div>
-            </div>
-            <div class="calculations">
-                <div class="amount">
-                    <div class="left">
-                        <p >Subtotal</p>
+                <div class="inputs">
+                    <div class="input-group">
+                        <label" for="">Departure</label>
+                            <input id="departure-date" class="inp-style" type="date" name="">
                     </div>
-                    <div class="right">
-                        <p id="sub-total">$00</p>
+                    <div class="input-group">
+                        <label for="">Return</label>
+                        <input id="return-date" class="inp-style" type="date" name="">
+                    </div>
+                </div>
+                <div class="input-group f-class">
+                    <div>
+                        <label for="">First Class ($150)</label>
+                        <input id="first-class-count" class="inp-style inp-width" type="number" name="" value="0">
+                    </div>
+                    <div class="plus-minus-btn">
+                        <p> <span onclick=" handleTicketChange('first-class',true);">+</span> <span
+                                onclick=" handleTicketChange('first-class',false);">-</span></p>
                     </div>
                 </div>
 
-                <div class="amount">
-                    <div class="left">
-                        <p>Charge 10% VAT</p>
+                <div class="input-group f-class">
+                    <div>
+                        <label for="">Economy ($100)</label>
+                        <input id="economy-count" class="inp-style inp-width" type="number" name="" value="0">
                     </div>
-                    <div class="right">
-                        <p id="tax-amount">$00</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="amount">
-                    <div class="left">
-                        <h4 >Total</h4>
-                    </div>
-                    <div class="right">
-                        <p id="total">$00</p>
+                    <div class="plus-minus-btn">
+                        <p> <span onclick="handleTicketChange('economy',true);">+</span> <span
+                                onclick="handleTicketChange('economy',false);">-</span> </p>
                     </div>
                 </div>
-            </div>
-            <button class="btn-style">Book Now</button>
-        </div>
+                <div class="calculations">
+                    <div class="amount">
+                        <div class="left">
+                            <p>Subtotal</p>
+                        </div>
+                        <div class="right">
+                            <p>$<span id="sub-total">00</span></p>
+                        </div>
+                    </div>
 
-        <div class="booking-content">
-            <h1>discover <br> around the world</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias
-                veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise
-                voluptatibus quam</p>
-        </div>
+                    <div class="amount">
+                        <div class="left">
+                            <p>Charge 10% VAT</p>
+                        </div>
+                        <div class="right">
+                            <p>$<span id="tax-amount">00</span></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="amount">
+                        <div class="left">
+                            <h4>Total</h4>
+                        </div>
+                        <div class="right">
+                            <p>$<span id="total">00</span></p>
+                        </div>
+                    </div>
+                </div>
+                <button id="book-now" class="btn-style">Book Now</button>
+                <br>
+                <p id="warning"></p>
+            </div>
+
+            <div class="booking-content">
+                <h1>discover <br> around the world</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias
+                    veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt
+                    nobise
+                    voluptatibus quam</p>
+            </div>
         </section>
 
-        <!--Thank You-->
+        <!-- confirmation-section -->
+        <section id="confirmation">
+            <div class="transection">
+                <h2 class="message">Transection Successfull</h2>
+                <p style="text-align: center;">Flight Details</p>
+                <div class="details">
+                    <div class="box">
+                        <p>Flying from:</p>
+                        <p id="receipt-flying-from"></p>
+                    </div>
+                    <div class="box">
+                        <p>Flying to:</p>
+                        <p id="receipt-flying-to"></p>
+                    </div>
+                    <div class="box">
+                        <p>Departure:</p>
+                        <p id="receipt-departure"></p>
+                    </div>
 
-        <script>
+                    <div class="box">
+                        <p>Return:</p>
+                        <p id="receipt-return"></p>
+                    </div>
+                    <div class="box">
+                        <p>First Class:</p>
+                        <p><span id="receipt-first-count">0</span></p>
+                    </div>
+                    <div class="box">
+                        <p>Economy Class:</p>
+                        <p><span id="receipt-economy-count"></span></p>
+                    </div>
+                    <div class="box">
+                        <p>Subtotal:</p>
+                        <p>$ <span id="receipt-sub-total">00</span></p>
+                    </div>
+                    <div class="box">
+                        <p>Tax:</p>
+                        <p>$ <span id="receipt-tax">00</span></p>
+                    </div>
 
-            function handleTicketChange(ticket,isIncrease) {
-                
-                const classCount = getInputValue(ticket);
-                let newCount = classCount;
-                if (isIncrease == true) {
-                    newCount = classCount + 1;
-                }
+                    <div class="box">
+                        <p class="bold">Total:</p>
+                        <p class="bold">$ <span id="receipt-total">00</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-                if (isIncrease == false && classCount > 0) {
-                    newCount = classCount - 1;
-                }
+    <!--Thank You-->
 
-                document.getElementById(ticket + '-count').value = newCount;
-                calculateTotal();
-
-            }
-
-
-            // Calculate-Total-Price 
-            function calculateTotal() {
-                const firstClassCount = getInputValue('first-class');
-                const economyClassCount = getInputValue('economy');
-
-                const subTotal = firstClassCount * 150 + economyClassCount * 100;
-                document.getElementById('sub-total').innerText = '$' + subTotal;
-
-                const tax = Math.round(subTotal * 0.1);
-                document.getElementById('tax-amount').innerText = '$' + tax;
-
-                const total = subTotal + tax;
-                document.getElementById('total').innerText = '$' + total;
-            }
-
-
-            // Convert-string-into-number
-            function getInputValue(ticket) {
-                const classInput = document.getElementById(ticket + '-count');
-                const classCount = parseInt(classInput.value);
-                return classCount;
-            }
-
-        </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
