@@ -9,8 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="css/all.min.css">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -54,8 +55,8 @@
                         <input id="first-class-count" class="inp-style inp-width" type="number" name="" value="0">
                     </div>
                     <div class="plus-minus-btn">
-                        <p> <span onclick=" handleTicketChange('first-class',true);">+</span> <span
-                                onclick=" handleTicketChange('first-class',false);">-</span></p>
+                        <p> <span onclick=" handleTicketChange('first-class',true);"><i class="fas fa-plus-square"></i></span> 
+                            <span onclick=" handleTicketChange('first-class',false);"><i class="fas fa-minus-square"></i></span></p>
                     </div>
                 </div>
 
@@ -65,8 +66,8 @@
                         <input id="economy-count" class="inp-style inp-width" type="number" name="" value="0">
                     </div>
                     <div class="plus-minus-btn">
-                        <p> <span onclick="handleTicketChange('economy',true);">+</span> <span
-                                onclick="handleTicketChange('economy',false);">-</span> </p>
+                        <p> <span onclick="handleTicketChange('economy',true);"><i class="fas fa-plus-square"></i></span> 
+                            <span onclick="handleTicketChange('economy',false);"><i class="fas fa-minus-square"></i></span> </p>
                     </div>
                 </div>
                 <div class="calculations">
@@ -114,15 +115,15 @@
         <!-- confirmation-section -->
         <section id="confirmation">
             <div class="transection">
-                <h2 class="message">Transection Successfull</h2>
+                <h2 class="message">Transection Successfull <i class="fas fa-check-circle"></i></h2>
                 <p style="text-align: center;">Flight Details</p>
                 <div class="details">
                     <div class="box">
-                        <p>Flying from:</p>
+                        <p>Flying From:</p>
                         <p id="receipt-flying-from"></p>
                     </div>
                     <div class="box">
-                        <p>Flying to:</p>
+                        <p>Flying To:</p>
                         <p id="receipt-flying-to"></p>
                     </div>
                     <div class="box">
@@ -162,7 +163,8 @@
 
     <!--Thank You-->
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/all.min.js"></script>
 </body>
 
 </html>
